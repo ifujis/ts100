@@ -480,9 +480,9 @@ static void gui_solderingMode(uint8_t jumpToSleep) {
 		case BUTTON_B_SHORT: {
 			uint16_t oldTemp = systemSettings.SolderingTemp;
 			gui_solderingTempAdjust();  // goto adjust temp mode
-			if (oldTemp != systemSettings.SolderingTemp) {
-				saveSettings();  // only save on change
-			}
+		//	if (oldTemp != systemSettings.SolderingTemp) {
+		//		saveSettings();  // only save on change
+		//	}
 		}
 			break;
 		default:
